@@ -25,4 +25,30 @@ for(i = 0; i < movies.length; i++)
     movies.forEach(myElement => 
     {
         console.log(`For Loop ${myElement}`);
-    })
+    });
+
+    //adding to an array
+    movies.push("Magnum PI");
+    for(i = 0; i < movies.length; i++)
+    {
+        console.log(movies[i]);
+    }
+    //getting the last element added to the array
+
+    console.log(movies[movies.length - 1]);
+  
+    //add to the beginning of an array use unshift
+    movies.unshift("50 First Dates");
+    console.log(movies[0]);
+
+    //remove the last element from an array
+    movies.pop();
+
+    //put it into a new variable
+    let theEndElement = movies.pop();
+
+    //splice(index to start, number of elements to remove)
+    movies.splice(1,2);
+    //so starts at the second element at index one and then removes the next two that follow
+
+    
